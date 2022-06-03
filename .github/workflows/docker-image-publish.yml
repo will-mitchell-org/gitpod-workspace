@@ -6,7 +6,7 @@ on:
 
 env:
   dockerhub_tag: willmitchell/gitpod-workspace:latest
-  ghcr_tag: ghcr.io/willmitchell/gitpod-workspace:latest
+  # ghcr_tag: ghcr.io/willmitchell/gitpod-workspace:latest
 
 jobs:
   docker_hub:
