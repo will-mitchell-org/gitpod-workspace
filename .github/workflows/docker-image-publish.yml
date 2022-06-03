@@ -36,9 +36,10 @@ jobs:
         with:
           push: true
           file: .gitpod.Dockerfile
+          dockerhub_tag: dockerhub_tag
           tags: |
             ${{github.repository}}:latest
-            ${{github.repository}}:${{ steps.sha.outputs.sha7 }}
+            # ${{github.repository}}:${{ steps.sha.outputs.sha7 }}
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
         
