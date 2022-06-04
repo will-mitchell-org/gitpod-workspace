@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y jq wget
 
 RUN mv $(which aws) /usr/local/bin/awscliv1 && \
   curl "${AWS_CLI_V2_URL}" -o "/tmp/awscliv2.zip" && \
-  unzip /tmp/awscliv2.zip -qd /tmp && \
+  unzip /tmp/awscliv2.zip -d /tmp && \
   /tmp/aws/install
 
 # install kubectl
