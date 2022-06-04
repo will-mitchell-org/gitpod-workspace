@@ -40,7 +40,8 @@ jobs:
         with:
           context: .
           file: .gitpod.Dockerfile
-          platforms: linux/amd64,linux/arm64
+          # platforms: linux/amd64,linux/arm64
+          platforms: linux/amd64
           push: true
           tags: |
             willmitchell/gitpod-workspace:latest
