@@ -45,4 +45,4 @@ jobs:
           push: true
           tags: |
             willmitchell/gitpod-workspace:latest
-            ghcr.io/willmitchell/gitpod-workspace:latest
+            ghcr.io/will-mitchell-org/gitpod-workspace:latest
