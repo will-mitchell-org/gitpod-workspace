@@ -39,6 +39,7 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           context: .
+          file: .gitpod.Dockerfile
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
